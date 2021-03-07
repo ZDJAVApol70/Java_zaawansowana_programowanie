@@ -18,12 +18,15 @@ public class User extends Account{
 
     public BigDecimal sumAmount() {
         BigDecimal sum = accounts.stream()
+                // getting a stream of values
                 .map(bankAccount -> {
                     Amount amount = bankAccount.getAmount();
                     BigDecimal amountInPln = amount.getValue().multiply(BigDecimal.valueOf(amount.getCurrency().getExchangeRate()));
                     return amountInPln;
                 })
+                // adding the values of the stream
                 .reduce((bigDecimal, bigDecimal2) -> bigDecimal.add(bigDecimal2))
+                // returning the above sum or 0 if it doesn't exist
                 .orElse(BigDecimal.ZERO);
        return sum;
     }

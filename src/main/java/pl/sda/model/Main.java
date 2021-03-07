@@ -1,8 +1,7 @@
-package pl.sda.model;
+import pl.sda.model.*;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-
 import java.util.List;
 
 public class Main {
@@ -20,7 +19,7 @@ public class Main {
         Address address1 = new Address("Lodz","Mickiewicza","50B");
         User user1 = new User("Paul",address1,accounts);
         System.out.println(user1.toString());
-
-        System.out.println(user1.sumAmount());
+        BigDecimal sumOfAmounts = user1.sumAmount();
+        System.out.println(sumOfAmounts);
     }
 }
