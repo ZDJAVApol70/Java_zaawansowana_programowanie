@@ -1,0 +1,4 @@
+Stwórz model konta bankowego. Klasą bazową będzie Account. BankAccount będzie jest dzieckiem.
+Klasa Account powinna posiadać numer i datę założenia;
+Klasa BankAccount powinna posiadać zawartość konta, będą obiektem posiadającym kwotę i walutę.
+Dodaj klasę User który posiada nazwę, adres i listę kont bankowych.
