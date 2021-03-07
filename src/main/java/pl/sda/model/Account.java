@@ -1,18 +1,20 @@
 package pl.sda.model;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+
 @Getter
 @Setter
 @ToString
 public class Account {
-    private int accountNumber;
-    private LocalDateTime creatingDate;
+    private int number;
+    private LocalDate openingDate;
 
-
-    public Account (){
-        this.accountNumber = (int) (Math.random()*10000000);
-        this.creatingDate = LocalDateTime.now();
+    public Account() {
+        this.number = (int) (Math.random() * 10000000);
+        this.openingDate = LocalDate.now();
     }
 }
