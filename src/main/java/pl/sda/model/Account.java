@@ -11,6 +11,8 @@ import java.time.LocalDate;
 @ToString
 public class Account {
     private int number;
+    private boolean deleted = false;
+
     private LocalDate openingDate;
 
     public Account() {

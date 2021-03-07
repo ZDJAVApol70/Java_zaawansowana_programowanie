@@ -21,5 +21,15 @@ public class Main {
         System.out.println(user1.toString());
         BigDecimal sumOfAmounts = user1.sumAmount();
         System.out.println(sumOfAmounts);
+
+        Address address = new Address("Warszawa", "Lazurowa", "37");
+        AdminUser admin = new AdminUser("Admin", address, new ArrayList<>());
+        admin.deleteAccount(bankAccount1);
+        BigDecimal sumOfAmountsAfterDelete = user1.sumAmount();
+        System.out.println(sumOfAmountsAfterDelete);
+
+
+
+
     }
 }
