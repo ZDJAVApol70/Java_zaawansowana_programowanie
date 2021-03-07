@@ -5,7 +5,7 @@ import lombok.*;
 import java.time.LocalDateTime;
 @Getter
 @Setter
-@ToString(callSuper = true)
+@ToString
 public class Account {
     private int accountNumber;
     private LocalDateTime creatingDate;
