@@ -12,6 +12,7 @@ import java.time.LocalDate;
 public class Account {
     private int number;
     private LocalDate openingDate;
+    private boolean deleted = false;
 
     public Account() {
         this.number = (int) (Math.random() * 10000000);

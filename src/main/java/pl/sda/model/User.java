@@ -18,6 +18,8 @@ public class User extends Account{
 
     public BigDecimal sumAmount() {
         BigDecimal sum = accounts.stream()
+                //filtred notDeleted Accounts
+                .filter(bankAccount -> !bankAccount.isDeleted())
                 // getting a stream of values
                 .map(bankAccount -> {
                     Amount amount = bankAccount.getAmount();

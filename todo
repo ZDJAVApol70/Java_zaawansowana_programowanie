@@ -2,3 +2,9 @@ Stwórz model konta bankowego. Klasą bazową będzie Account. BankAccount będz
 Klasa Account powinna posiadać numer i datę założenia;
 Klasa BankAccount powinna posiadać zawartość konta, będą obiektem posiadającym kwotę i walutę.
 Dodaj klasę User który posiada nazwę, adres i listę kont bankowych.
+--------------
+Dodaj klasy CommonUser która potrafi zliczyć saldo ze wszystkich posiadanych kont.
+Pamiętaj dodać do waluty przelicznik.
+--------------
+Dodaj klasę AdminUser który posiada metodę pozwalającą zamykać konta(zmiana flagi typu boolean)
+innych użytkowników. Pamiętaj że podczas zliczania salda nie bierzemy pod uwagę kont zamkniętych.

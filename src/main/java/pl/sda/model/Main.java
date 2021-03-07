@@ -1,4 +1,4 @@
-import pl.sda.model.*;
+package pl.sda.model;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -21,5 +21,9 @@ public class Main {
         System.out.println(user1.toString());
         BigDecimal sumOfAmounts = user1.sumAmount();
         System.out.println(sumOfAmounts);
+
+        AdminUser adminUser = new AdminUser("admin", address1, null);
+        adminUser.deleteAccount(bankAccount1);
+        System.out.println(user1.sumAmount());
     }
 }
