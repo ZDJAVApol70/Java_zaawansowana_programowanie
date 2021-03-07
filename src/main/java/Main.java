@@ -13,8 +13,8 @@ public class Main {
         List<BankAccount> accounts = new ArrayList<>();
         accounts.add(bankAccount1);
         accounts.add(bankAccount2);
-        Address address1 = new Address("Lodz", "Mickiewicza", "50B");
-        User user1 = new User("Paul", address1, accounts);
+        Address address1 = new Address("Lodz","Mickiewicza","50B");
+        User user1 = new User("Paul",address1,accounts);
         System.out.println(user1.toString());
     }
 }

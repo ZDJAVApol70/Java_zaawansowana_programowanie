@@ -1,5 +1,6 @@
 package pl.sda.model;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.ToString;
